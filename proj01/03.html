@@ -17,6 +17,16 @@
       const aHello = (a) => "hello " + a;
 
       console.log(aHello("carami"));
+
+      function carami(inputFunc) {
+        inputFunc();
+      }
+
+      carami(function () {
+        return "hello";
+      });
+
+      carami(() => "hello");
     </script>
   </body>
 </html>
